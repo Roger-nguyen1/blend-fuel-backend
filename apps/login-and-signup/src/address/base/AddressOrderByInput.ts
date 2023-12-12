@@ -83,17 +83,6 @@ class AddressOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  state?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["asc", "desc"],
-  })
-  @IsOptional()
-  @IsEnum(SortOrder)
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
   updatedAt?: SortOrder;
 
   @ApiProperty({
